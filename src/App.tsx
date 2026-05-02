@@ -126,7 +126,7 @@ const faqs = [
 export default function App() {
   return (
     <TooltipProvider>
-      <div className="min-h-screen bg-neo-offwhite font-body">
+      <div className="min-h-screen bg-neo-offwhite font-body overflow-x-hidden">
         {/* ── Navbar ─────────────────────────────────────────────── */}
         <Navbar variant="default" sticky>
           <NavbarContainer>
@@ -151,13 +151,13 @@ export default function App() {
         </Navbar>
 
         {/* ── Hero ───────────────────────────────────────────────── */}
-        <section className="px-6 pt-24 pb-20 max-w-5xl mx-auto text-center">
+        <section className="px-6 pt-16 sm:pt-24 pb-20 max-w-5xl mx-auto text-center">
           <Badge variant="new" className="mb-6">
             v1.0.2 — Now on npm
           </Badge>
-          <h1 className="font-display font-bold text-5xl md:text-7xl leading-tight tracking-tight text-neo-black mb-6">
+          <h1 className="font-display font-bold text-3xl sm:text-5xl md:text-7xl leading-tight tracking-tight text-neo-black mb-6">
             Build bold UIs{" "}
-            <span className="bg-neo-yellow px-2 inline-block shadow-brutal-sm">
+            <span className="bg-neo-yellow px-2 inline-block shadow-brutal-sm break-words">
               unapologetically.
             </span>
           </h1>
